@@ -11,6 +11,7 @@ public:
     void close();
     char getBuffer() const;
     bool isEOF() const;
+    int readInt();
 
 private:
     int k;

@@ -31,3 +31,9 @@ char BinReader::getBuffer() const {
 bool BinReader::isEOF() const {
     return f.eof();
 }
+
+int BinReader::readInt() {
+    int y = 0;
+    f.read((char*)&y, sizeof(y));
+    return y;
+}
