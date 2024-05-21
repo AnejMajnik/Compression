@@ -15,14 +15,12 @@ compile:
 
 # Target to run the program with specified arguments
 run: compile
-	./$(EXEC) c input.txt
-	./$(EXEC) d out.bin
+	./$(EXEC) c Input/lena512.bmp
+	./$(EXEC) d lena512.bmp.bin
 
 # Target to clean the build files
 clean:
-	rm -f $(EXEC)
-	rm -f out.bin
-	rm -f decompressed.txt
+	rm -f $(EXEC) lorem_ipsum.txt.bin lorem_ipsum.txt alice.txt.bin alice.txt oscar_age_male.csv oscar_age_male.csv.bin lena512.bmp lena512.bmp.bin
 
 # Phony targets to avoid conflicts with files of the same name
 .PHONY: all compile run clean

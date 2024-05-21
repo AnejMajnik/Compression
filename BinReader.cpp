@@ -19,13 +19,13 @@ bool BinReader::readBit() {
     return b;
 }
 
-void BinReader::close() { // Public method to close file
+void BinReader::close() {
     if (f.is_open())
         f.close();
 }
 
 char BinReader::getBuffer() const {
-    return x; 
+    return x;
 }
 
 bool BinReader::isEOF() const {

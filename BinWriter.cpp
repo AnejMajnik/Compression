@@ -26,12 +26,11 @@ void BinWriter::writeBit(bool b) {
     k++;
 }
 
-void BinWriter::close() { // Public method to close file
+void BinWriter::close() {
     if (f.is_open())
         f.close();
 }
 
 char BinWriter::getBuffer() const {
-    return x; 
+    return x;
 }
-
