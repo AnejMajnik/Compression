@@ -152,6 +152,7 @@ void decompressFile(const string& inputFilePath, const string& outputFilePath) {
         decodingMap[p.second] = p.first;
     }
 
+    
     // Debug: Read the encoded data and decode it
     cout << "Starting bit reading after frequency table..." << endl;
     string currentBits;
